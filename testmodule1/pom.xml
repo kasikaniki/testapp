@@ -4,11 +4,11 @@
   <parent>
     <groupId>com.test</groupId>
     <artifactId>testapp</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
   </parent>
   <groupId>com.test</groupId>
   <artifactId>testmodule1</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.4-SNAPSHOT</version>
   <name>testmodule1</name>
   <url>http://maven.apache.org</url>
   <properties>
