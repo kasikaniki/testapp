@@ -7,9 +7,14 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   
+  
   <scm>
-    <developerConnection>scm:svn:https://svn.mycompany.com/repos/myapplication/trunk/mycomponent/</developerConnection>
-  </scm> 
+    <connection>scm:git:https://github.com/kasikaniki/testapp.git</connection>
+    <developerConnection>scm:git:https://github.com/kasikaniki/testapp.git</developerConnection>
+    <url>https://github.com/kasikaniki/testapp/${project.scm.tag}</url>
+    <tag>master</tag>
+  </scm>
+  
   
   <name>testapp</name>
   <url>http://maven.apache.org</url>
@@ -17,6 +22,19 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+        <configuration>
+          <tagNameFormat>v@{project.version}</tagNameFormat>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
   <modules>
   	<module>testmodule1</module>
