@@ -3,7 +3,7 @@
 
   <groupId>com.test</groupId>
   <artifactId>testapp</artifactId>
-  <version>1.9</version>
+  <version>1.10-SNAPSHOT</version>
   <packaging>pom</packaging>
   
   
@@ -11,7 +11,7 @@
     <connection>scm:git:https://github.com/kasikaniki/testapp.git</connection>
     <developerConnection>scm:git:https://github.com/kasikaniki/testapp.git</developerConnection>
     <url>https://github.com/kasikaniki/testapp/${project.scm.tag}</url>
-    <tag>v1.9</tag>
+    <tag>master</tag>
   </scm>
   
   
